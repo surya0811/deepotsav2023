@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Admission Form 2022</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark  bg-color p-0 m-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://kanchiuniv.ac.in/"><img src="Image/logo.png" alt="DBK Logo" height="72"></a>
+      <h1 class="text-white h2">Computer Science And Engineering</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      
+      </button>
+  
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link mx-2 " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 " aria-current="page" href="./Image/invitation.jpg">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" href="admission-form.html">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 " href="complaint.html">Complaint</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Admission form start-->
+
+<div class="form-section">
+    <div class="container">
+        <header>Registration</header>
+
+        <form>
+            <div class="form step step-1 active">
+                <div class="details personal">
+                    <span class="title">Student Details</span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 1/1 )</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name <span class="star">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="enter your fullname"/>
+                        </div>
+                        <div class="input-field">
+                            <label>Email(College)/1st year use personal mail</label>
+                            <input type="text" placeholder="Enter your email id" pattern="[a-z0-9.@]+"id="email" name="email" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number<span class="star">*</span></label>
+                            <input type="tel" placeholder="Enter mobile number" pattern="[6789][0-9]{9}" size="10" id="mobilenumber" name="mobilenumber" maxlength="10" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>registerno(eg:11509a001)<span class="star">*</span></label>
+                            <input type="text" placeholder="Enter register no (use small letter)"  id="registerno" name="registerno" >
+                        </div>
+                        <div class="input-field">
+                          <label>Year<span class="star">*</span></label>
+                          <select id="year" name="year"  id ="year">
+                            <option value="">Select a year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                          </select>
+                        </div>
+                       
+                  
+                        <button type="submit" class="submit-btn" id ="sub"> Submit
+                        <i class="uil uil-navigator"></i>
+                        </button>
+                               
+            
+                  
+                </div> 
+            </div>
+          </form>
+          <div id="msg" style="display: none; position: absolute; bottom: 10rem; background-color: #4CAF50; color: #fff; padding: 10px; border: 1px solid #000; border-radius: 5px;">
+            <p>Data saved successfully <span>&#9989;</span></p>
+        </div>
+      
+    </div>
+  </div>
+    
+<!-- 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+ <!-- <script src="https://media.twiliocdn.com/sdk/js/client/v1.15/twilio.js"></script> -->
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twilio/1.21.0/twilio.min.js"></script> -->
+ <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="./script.js"> </script> --> -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let form = document.querySelector("form");
+
+      form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          let sub = document.querySelector("#sub");
+          sub.value = "Submiting..";
+
+          let data = new FormData(form);
+
+          fetch('https://script.google.com/macros/s/AKfycby9UGpdSRg_qV9tnplKxZd-R9xcfsoe8AHMvAhOvmpdv93LwUkz1HN-st7uKxZMBxPP/exec', {
+              method: "POST",
+              body: data
+          })
+          .then(res => res.text())
+      .then(data => {
+        console.log(data); // Log the response content
+
+        // Check the response for the actual indicator of success
+        if (data.includes("Success")) {
+          alert("Data saved successfully");
+          // Redirect to poster.html
+          window.location.href = "poster.html";
+        } else {
+          alert("Data saving failed. Please try again.");
+        }
+        sub.value = "Submit";
+      });
+    });
+  });
+</script>
+
+<script src="./bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

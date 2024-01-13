@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain Area</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+   
+</head>
+
+<body>
+
+  
+    <!-- header section starts  -->
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-color p-0 m-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://kanchiuniv.ac.in/"><img src="Image/logo.png" alt="DBK Logo" height="72"></a>
+        <h1 class="text-white h2">Computer Science And Engineering</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 " aria-current="page" href="./Image/invitation.jpg">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 active " href="complaint.html">Complaint</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- header section Ends  -->
+
+
+<div style="background-image: linear-gradient(60deg, #000, transparent), url(../image/himgate2.JPG); background-size: cover; ">
+
+  <section style="position: relative; padding: 80px;  min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    
+  <div class="contactForm" style="width: 600px; margin: auto;">
+
+    <form>
+      <h2>Send Complain Message</h2>
+      <br>
+      <br>
+    
+      <div class="inputBox">
+        <input type="text" name="name" placeholder="Name or Type Anonymous" required="required" pattern="[A-z ]+">
+        <span>Name</span>
+      </div>
+    
+      <div class="inputBox">
+        <select name="year" style="border: none; border-bottom: 2px solid #000; width: 400px; margin-bottom: 10px; font-size: 18px; color: #222;" required="required">
+          <option disabled selected value="Not Selected">Select year</option>
+          <option value="1">1st year</option>
+          <option value="2">2nd year</option>
+          <option value="3">3rd year</option>
+          <option value="4">4th year</option>
+        </select>
+      </div>
+    
+      <div class="inputBox">
+        <input type="text" name="email" required="required">
+        <span>Email</span>
+      </div>
+    
+      <div class="inputBox">
+        <textarea required="required" name="message"></textarea>
+        <span>Type your Message...</span>
+      </div>
+    
+      <div class="inputBox">
+        <input type="submit" name="submit" id="sub" value="Send Complain">
+      </div>
+    </form>
+    <div id="msg"></div>
+   
+   </div>
+  </section>
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- footer section starts -->
+
+<footer style="background:url(Image/footer-img1.webp)">
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <span>SCSVMV UNIVERSITY</span>
+      </div>
+      <div class="media-icons">
+       <!-- <a href="# "><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fa-solid fa-envelope"></i></a> -->
+       <a href="https://instagram.com/_.cse_events._?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+       <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+       <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">About</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><a href="About-us.html">About us</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Quick Links</li>
+        <li><a href="admission-form.html">Admission Form</a></li>
+        <li><a href="#notice-board for student">Notice Board</a></li>
+        <li><a href="#">University Site</a></li>
+      </ul>
+      <ul class="box">
+       <li class="link_name">Student's Corner</li>
+       <!-- <li><a href="fees-payment.html">Fees Payment</a></li> -->
+       <li><a href="complaint.html">Complaint Section</a></li>
+       <!-- <li><a href="#">University Login</a></li> -->
+       
+     </ul>
+      <!-- <ul class="box">
+        <li class="link_name">Account</li>
+        <li><a href="#">Admin Login</a></li>
+        <li><a href="#">My account</a></li>
+      </ul> -->
+      
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="email" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 | All rights reserved To SCSVMV</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<!--footer section ends -->
+
+
+         
+         
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let form = document.querySelector("form");
+
+      form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          let sub = document.querySelector("#sub");
+          sub.value = "Submiting..";
+
+          let data = new FormData(form);
+
+          fetch('https://script.google.com/macros/s/AKfycbyFxXyY5sQs55kf6g2UPFyDzKvsWKyL9t3Ozi1LCCkYYYOgs1aImVeMvS4f_8jTSfsc/exec', {
+              method: "POST",
+              body: data
+          })
+          .then(res => res.text())
+          .then(data => {
+              document.querySelector("#msg").innerHTML = data;
+              sub.value = "Submit";
+          });
+      });
+  });
+  </script>
+<script src="./bootstrap.min.js"></script>
+         </body>
+         </html>

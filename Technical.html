@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <style>
+      /* aravind css*/
+      .body-technical {
+  background-color: #777;
+  
+}
+.event {
+  display: grid;
+  margin: 20px;
+  position:relative;
+}
+
+
+.left-content, .right-content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.left-content {
+  left: 0;
+}
+ a button{
+  color: white;
+  background-color: #f7490f;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000;
+}
+
+.right-content {
+  right: 0;
+}
+
+.event:hover .left-content, .event:hover .right-content {
+  display: flex;
+}
+
+.event-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+/* Style for the heading container */
+.heading1 {
+  background-color: #0a15ea; 
+  color: #fff; 
+  text-align: center; 
+  padding: 5px 0; 
+  font-size: 24px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  position: relative; 
+}
+
+/* Style for the h1 element within the heading */
+.heading1 h1 {
+  margin: 0; 
+  animation: slideIn 1s ease; 
+}
+
+/* Animation keyframes for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1;
+  }
+}
+
+    </style>
+    
+    <title>Technical events</title>
+</head>
+<body>
+
+     <!-- header section starts  -->
+ 
+     <header class="header">
+
+      <a href="/index.html" class="logo">
+         <img src="Image/logo.png" alt="collage logo" style="width: 100px; height: 80px;" /> 
+         <div class="collage-name"style="display: inline; white-space: nowrap;">Computer Science And Engineering</div></a>
+   
+         <nav class="navbar">
+            <div id="close-navbar" class="close-icon"><img src="Image/close-icon.gif" width="50" /></div>
+
+            <div id="close-navbar" class="close-icon"><img src="Image/close-icon.gif" width="50" /></div>
+
+            <ul class="navbar-links">
+              <li class="navbar-dropdown">
+                <a href="poster.html">Home</a> </li>
+
+           <li class="navbar-dropdown">
+             <a href="#">Events</a>
+             <div class="dropdown"><ul>
+               <li>
+                  <a href="Technical.html">Technical</a>
+                  <a href="Nontechnical.html">Non Technical</a>
+                  
+               </li>
+               
+            </ul>
+             </div>
+           </li>
+
+         <!-- <li class="navbar-dropdown">
+             <a href="admission-form.html" target ="_blank" >Registration</a> </li> -->
+               
+             <li class="navbar-dropdown">
+               <a href="contact-us.html">Contact</a> </li>
+
+               <li class="navbar-dropdown">
+                <a href="login.html">login</a> </li>
+
+         <li class="navbar-dropdown">
+             <a href="./public/EVENT ORGANIZERS .pdf">organizer info</a> </li>
+     </ul>
+      </nav>
+  </header>
+     <div class ="body-technical">
+     <div class="heading1">
+            <h1> Technical events</h1>
+     </div>
+     <div class="event">
+        <div class="left-content">
+            <h1>Hackathon</h1><br>
+            <p>Date: 6/11/2023<br>
+            Time: 12:40 AM - 01:30 PM <br>
+            Location: CSE Seminar Hall<br>
+            Last Date: 1/11/2023</br>
+            Winners : 500Rs CASH PRICE <br/>
+            </p>
+            <a href="https://forms.gle/1dmAZDoEN3c52j389">
+                <button>Click to Register</button>
+            </a>
+        </div>
+        <img src="Image/hackathon.jpg" alt="Hackathon" class="event-image" style="border: 2px solid #0f9be1; display: block; margin: 0 auto; height: 250px; width: 450px;">
+        <div class="right-content">
+            <h4>Organizers: Shiva Koushik (IV-CSE)</h4><br>
+            <h4> Sriram Krishnan(III-CSE)</h4><br>
+            <h4 style="font-size: large;">PH: </h4>
+            <h4>Judges:Mr.V.Balu,Mr.E.Sankar </h4>
+            <a href="./public/Hackathon.pdf">
+              <button>Rules and Regulations</button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="event">
+        <div class="left-content">
+            <h1> Quiz</h1><br>
+            <p>Date: 6/11/2023<br>
+            Time: 03:30 PM - 4:45 PM<br> 
+            Location: CSE Seminar Hall<br>
+            Last Date: 1/11/2023</br>
+            Winners : 500Rs CASH PRICE <br/>
+            </p>
+            <a href="https://forms.gle/uKAtpLbutcg2DiHNA">
+                <button>Click to Register</button>
+            </a>
+        </div>
+        <img src="Image/quiz.jpg" alt="Hackathon" class="event-image" style="border: 2px solid #e6835f; display: block; margin: 0 auto; height: 300px; width: 450px;">
+        <div class="right-content">
+            <h4>Organizers: Surya Prakash (IV-CSE)</h4>
+            <h4>     Sriram Krishnan (III-CSE)</h4><br>
+            <h4 style="font-size: large;">PH: </h4>
+            <h4>Judge:DR M.Thirunavukarasu</h4>
+            <a href="./public/Quiz.pdf">
+              <button>Rules and Regulations</button>
+            </a>
+        </div>
+    </div>
+    <div class="event">
+        <div class="left-content">
+            <h1>Elocution</h1><br>
+            <p>Date: 8/11/2023<br>
+            Time: 3:30 PM - 5:00 PM<br> 
+            Location: CSE Seminar Hall<br>
+            Last Date: 1/11/2023</br>
+            Winners : 500 Rs CASH PRICE<br/>
+            </p>
+            <a href="https://forms.gle/L9SB7EZ7bnLP21nf9">
+                <button>Click to Register</button>
+            </a>
+        </div>
+        <img src="Image/eloctution.jpg" alt="Hackathon" class="event-image" style="border: 2px solid #e6835f; display: block; margin: 0 auto; height: 300px; width: 450px;">
+        <div class="right-content">
+            <h4>Organizer: Srinidhi (IV-CSE)</h4><br>
+            <h4> Surendar (III-CSE)</h4>
+            <h4 style="font-size: large;">PH</h4>
+            <h4>Judge:DR M.Gayathri</h4>
+            <a href="./public/Elocuation.pdf">
+              <button>Rules and Regulations</button>
+            </a>
+        </div>
+    </div>
+    <div class="event">
+        <div class="left-content">
+            <h1>TechClash</h1><br>
+            <p>Date: 7/11/2023<br>
+            Time: 3:10 PM - 4:50 PM<br> 
+            Location: CSE Seminar Hall<br>
+            Last Date: 1/11/2023<br/>
+            Winners : 500Rs CASH PRICE <br/>
+          </p>
+            <a href="https://forms.gle/quxbiZwpwkDXHB7o8">
+                <button>Click to Register</button>
+            </a>
+        </div>
+        <img src="Image/debate.jpg" alt="Hackathon" class="event-image" style="border: 2px solid #e6835f; display: block; margin: 0 auto; height: 300px; width: 450px;">
+        <div class="right-content">
+            <h4>Organizers: Aravind(IV-IT)</h4>
+            <h4>  Siri (III-CSE)</h4><br>
+            <h4 style="font-size: large;">PH:</h4>
+            <h4>Judge:DR M.Gayathri,DR R.Saraswathi</h4>
+            <a href="./public/Debate.pdf">
+                <button>Rules and Regulations</button>
+              </a>
+        </div>
+    </div>
+</div>  
+<footer>
+    <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023 | All rights reserved To SCSVMV@CSE</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>   
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>    
+
+   
